@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Strona Kontaktowa</title>
+<style>
+    /* Resetowanie domyślnych marginesów i paddingów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ustawienia ogólne */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Nagłówek */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Kontener z danymi kontaktowymi i formularzem */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+/* Styl dla sekcji z danymi kontaktowymi */
+.contact-info {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Styl dla formularza kontaktowego */
+.contact-form {
+    width: 55%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+
+/* Style formularza */
+.contact-form form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form form button:hover {
+    background-color: #555;
+}
+
+/* Stopka */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 31.3vh;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Kontakt</h1>
+    </header>
+
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>Nasze dane kontaktowe</h2>
+            <p><strong>Email:</strong> kontakt@example.com</p>
+            <p><strong>Telefon:</strong> 123 456 789</p>
+            <p><strong>Adres:</strong> Ul. Przykładowa 1, 00-000 Miasto</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Skontaktuj się z nami</h2>
+            <form action="#" method="post">
+                <label for="name">Imię i nazwisko</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Wiadomość</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Wyślij wiadomość</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Firma. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
