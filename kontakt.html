@@ -26,19 +26,23 @@ header {
     color: black;
     padding: 20px;
     text-align: center;
+    border-bottom: 2px dashed black;
 }
 
 
 .contact-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 54px;
 }
 
 .contact-info {
+    margin: 0;
     width: 40%;
-    background-color: #fff;
     padding: 20px;
+    background-color: rgb(196, 196, 196);
+    border: 2px dashed rgb(161, 161, 161);
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,8 +57,10 @@ header {
 
 .contact-form {
     width: 55%;
-    background-color: #fff;
-    padding: 20px;
+    background-color: rgb(196, 196, 196);
+    border: 2px dashed rgb(161, 161, 161);
+    padding: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -91,11 +97,53 @@ header {
 }
 
 footer {
+    border-top: 2px dashed black;
     background-color: #b6af8c;
     color: black;
     text-align: center;
     padding: 10px;
-    margin-top: 31.3vh;
+    margin-top: 27vh;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #969074;
+    padding: 10px;
+    border-bottom: 2px dashed black;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #FFF5C5;
+    color: black;
+}   
+@media (max-width: 768px) {
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .contact-info{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+    footer{
+        margin: 0;
+    }
+
 }
 
 </style>
@@ -104,6 +152,10 @@ footer {
     <header>
         <h1>Kontakt</h1>
     </header>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="o-nas.html">O nas</a>
+    </nav>
 
     <section class="contact-container">
         <div class="contact-info">
