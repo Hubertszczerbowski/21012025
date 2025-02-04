@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #dfd6a9;
     color: #333;
 }
 .logo img{
@@ -112,7 +112,7 @@ nav {
 
 .book-card button {
     background-color: #2a6cbd;
-    color: #FFEFBD;
+    color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -279,7 +279,7 @@ footer ul li a {
     max-width: 600px;
     border-radius: 15px;
 }
-
+/* zrobione przez Huberta */
 .modal-content h2 {
     font-size: 28px;
     margin-bottom: 20px;
@@ -383,4 +383,7 @@ footer ul li a {
 
 .promo-item:hover .promo-overlay {
     opacity: 1;
+}
+.addToCard{
+    background-color: #2a6cbd;
 }
